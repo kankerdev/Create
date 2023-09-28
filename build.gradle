@@ -71,7 +71,7 @@ def dependencies(DependencyHandler deps) {
     deps.modApi(deps.include("com.electronwill.night-config:core:$night_config_version"))
     deps.modApi(deps.include("com.electronwill.night-config:toml:$night_config_version"))
     deps.modApi(deps.include("curse.maven:forge-config-api-port-fabric-547434:$config_api_id"))
-    deps.modApi(deps.include("com.jozufozu.flywheel:flywheel-fabric-$flywheel_minecraft_version:$flywheel_version"))
+    deps.modApi(deps.include("com.github.Treetrain1:Flywheel:1f43c56a94096f09048f41a79c9bc43bbbe1deda"))
     deps.modApi(deps.include("com.jamieswhiteshirt:reach-entity-attributes:$reach_entity_attributes_version"))
     deps.modApi(deps.include("io.github.tropheusj:milk-lib:$milk_lib_version"))
     deps.api(deps.include("com.google.code.findbugs:jsr305:$jsr305_version"))
