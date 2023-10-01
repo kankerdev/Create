@@ -18,7 +18,7 @@ String build = runNumber != null ? "build.$runNumber" : "local"
 version = "$mod_version-$build+mc$minecraft_version"
 
 group = project.maven_group
-archivesBaseName = "create-fabric"
+archivesBaseName = "create-sodium-fix"
 
 repositories {
     maven { url = "https://maven.quiltmc.org/repository/release" } // QM

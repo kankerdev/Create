@@ -47,12 +47,10 @@ public class CreateMainMenuScreen extends AbstractSimiScreen {
 		new ResourceLocation("textures/gui/title/background/panorama_overlay.png");
 	public static final PanoramaRenderer PANORAMA = new PanoramaRenderer(PANORAMA_RESOURCES);
 
-	private static final Component CURSEFORGE_TOOLTIP = Components.literal("CurseForge").withStyle(s -> s.withColor(0xFC785C).withBold(true));
 	private static final Component MODRINTH_TOOLTIP = Components.literal("Modrinth").withStyle(s -> s.withColor(0x3FD32B).withBold(true));
 
-	public static final String CURSEFORGE_LINK = "https://www.curseforge.com/minecraft/mc-mods/create-fabric";
-	public static final String MODRINTH_LINK = "https://modrinth.com/mod/create-fabric";
-	public static final String ISSUE_TRACKER_LINK = "https://github.com/Fabricators-of-Create/Create/issues";
+	public static final String MODRINTH_LINK = "https://modrinth.com/mod/create-fabric-sodium-fix";
+	public static final String ISSUE_TRACKER_LINK = "https://github.com/Treetrain1/Create/issues";
 	public static final String SUPPORT_LINK = "https://github.com/Creators-of-Create/Create/wiki/Supporting-the-Project";
 
 	protected final Screen parent;
@@ -170,10 +168,6 @@ public class CreateMainMenuScreen extends AbstractSimiScreen {
 		gettingStarted.active = !fromTitleOrMods;
 		addRenderableWidget(gettingStarted);
 
-		addRenderableWidget(new PlatformIconButton(center - 100, yStart + 48 + -16, bShortWidth / 2, bHeight,
-			AllGuiTextures.CURSEFORGE_LOGO, 0.085f,
-			b -> linkTo(CURSEFORGE_LINK),
-			Tooltip.create(CURSEFORGE_TOOLTIP)));
 		addRenderableWidget(new PlatformIconButton(center - 50, yStart + 48 + -16, bShortWidth / 2, bHeight,
 			AllGuiTextures.MODRINTH_LOGO, 0.0575f,
 			b -> linkTo(MODRINTH_LINK),
