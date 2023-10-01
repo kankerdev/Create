@@ -168,7 +168,7 @@ public class CreateMainMenuScreen extends AbstractSimiScreen {
 		gettingStarted.active = !fromTitleOrMods;
 		addRenderableWidget(gettingStarted);
 
-		addRenderableWidget(new PlatformIconButton(center - 50, yStart + 48 + -16, bShortWidth / 2, bHeight,
+		addRenderableWidget(new PlatformIconButton(center - 100, yStart + 48 + -16, bShortWidth, bHeight,
 			AllGuiTextures.MODRINTH_LOGO, 0.0575f,
 			b -> linkTo(MODRINTH_LINK),
 			Tooltip.create(MODRINTH_TOOLTIP)));
