@@ -204,6 +204,10 @@ public class DeployerHandler {
 			}
 
 			List<ItemEntity> capturedDrops = entity.finishCapturingDrops();
+			
+			// Temp fix for https://github.com/Fabricators-of-Create/Create/issues/1204
+			if (capturedDrops == null) capturedDrops = new ArrayList<>();
+
 			capturedDrops.forEach(e -> player.getInventory()
 				.placeItemBackInInventory(e.getItem()));
 			if (success)

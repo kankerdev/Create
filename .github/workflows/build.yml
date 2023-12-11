@@ -47,6 +47,7 @@ jobs:
           name: Artifacts
           path: build/libs/
 
-      - name: publish to Modrinth and CurseForge
-        if: ${{ github.event.inputs.publish }}
-        run: ./gradlew publishMod
+      # Not really gonna work for us is it?
+      # - name: publish to Modrinth and CurseForge
+      #   if: ${{ github.event.inputs.publish }}
+      #   run: ./gradlew publishMod
