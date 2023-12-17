@@ -24,7 +24,11 @@ public class ContraptionData {
 	 * {@link ContraptionData#DEFAULT_MAX} is used as the default.
 	 * XL Packets expands the size limit to ~2 GB. If the mod is loaded, we take advantage of it and use the higher limit.
 	 */
-	public static final int PICKUP_MAX = Mods.XLPACKETS.isLoaded() ? EXPANDED_MAX : DEFAULT_MAX;
+	// public static final int PICKUP_MAX = Mods.XLPACKETS.isLoaded() ? EXPANDED_MAX : DEFAULT_MAX;
+	
+	// Fabricate ships with XXLPackets which is a fork of XLPackets so this should just always assume the max is the expanded max 
+	public static final int PICKUP_MAX = EXPANDED_MAX;
+
 
 	/**
 	 * @return true if the given NBT is too large for a contraption to be synced to clients.
